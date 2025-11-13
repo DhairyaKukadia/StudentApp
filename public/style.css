@@ -1,0 +1,128 @@
+/* --------- Global Styles --------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* --------- Cards --------- */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* --------- Inputs --------- */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #4b7bec;
+  outline: none;
+  box-shadow: 0 0 5px rgba(75, 123, 236, 0.5);
+}
+
+/* --------- Buttons --------- */
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #4b7bec;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #3867d6;
+}
+
+/* Delete + Edit */
+.btn-delete {
+  background: #eb3b5a;
+}
+
+.btn-delete:hover {
+  background: #d72644;
+}
+
+.btn-edit {
+  background: #f7b731;
+}
+
+.btn-edit:hover {
+  background: #ffa502;
+}
+
+/* -------- Dashboard Cards -------- */
+.stat-card {
+  display: inline-block;
+  width: 30%;
+  min-width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.stat-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  opacity: 0.8;
+}
+
+/* Page Headings */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Navigation */
+nav {
+  background: #4b7bec;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+}

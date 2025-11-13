@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav>
+  <h3>Students</h3>
+  <div>
+    <a href="/dashboard">Dashboard</a>
+    <a onclick="logout()">Logout</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <h1>Add Student</h1>
+    <input id="name" placeholder="Name">
+    <input id="roll" placeholder="Roll Number">
+    <input id="branch" placeholder="Branch">
+    <input id="email" placeholder="Email">
+    <button onclick="addStudent()">Add</button>
+  </div>
+
+  <div class="card">
+    <h1>Students List</h1>
+    <input id="search" placeholder="Search" oninput="loadStudents()">
+    <button onclick="exportCSV()">Export CSV</button>
+    <div id="studentList"></div>
+  </div>
+
+  <div id="attendanceBox" class="card" style="display:none;">
+    <h3>Mark Attendance</h3>
+    <p id="attStudentName"></p>
+
+    <select id="attStatus">
+      <option value="Present">Present</option>
+      <option value="Absent">Absent</option>
+    </select>
+
+    <input type="date" id="attDate">
+
+    <button onclick="submitAttendance()">Submit</button>
+    <button onclick="closeAttendance()">Close</button>
+  </div>
+
+</div>
+
+<script src="/script/students.js"></script>
+</body>
+</html>
